@@ -1,0 +1,142 @@
+.quality {
+  &__title {
+    padding: 50px 40px 11px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    color: #171616;
+  }
+  
+  &__subtitle {
+    padding-bottom: 59px;
+    padding-right: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #171616;
+  }
+
+  &__hero {
+    position: relative;
+    display: flex;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: -120px;
+    width: 50%;
+  }
+
+  &__img {
+    width: 98%;
+    height: 99%;
+    object-fit:cover;
+  }
+
+  &__card-wrapper {
+    display: grid;
+    grid-template-columns:  (31% 31% 25%);
+    grid-auto-rows: minmax(50px, auto);
+    grid-row-gap: 32px;
+    grid-column-gap: 50px;
+    grid-template-areas: 
+    "cheif control media"
+    "senior master .";
+    max-width: 1147px;
+    padding-left: 503px ;
+    margin-right: 25px;
+    counter-reset: score 0;
+  }
+
+  &__card::before{
+    counter-increment: score;
+    content: "0" counter(score);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #6CAC3D;
+  }
+
+  &__number {
+    display: inline-block;
+    margin-bottom: 13px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D6D6D6;
+  }
+  
+  &__direction {
+    max-width: 207px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #171616;
+  }
+
+  &__text {
+    max-width: 194px;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #171616;
+  }
+
+  &__cheif{
+    grid-area: cheif;
+
+    .quality__direction{
+      margin-bottom: 33px;
+    }
+  }
+
+  &__control {
+    grid-area: control;
+
+    .quality__direction{
+      margin-bottom: 11px;
+    }
+  }
+
+  &__media {
+    grid-area: media;
+
+    .quality__direction{
+      margin-bottom: 12px;
+    }
+  }
+
+  &__senior {
+    grid-area: senior;
+
+    .quality__direction{
+      margin-bottom: 11px;
+    }
+  }
+
+  &__master {
+    grid-area: master;
+
+    .quality__direction{
+      margin-bottom: 11px;
+    }
+  }
+}

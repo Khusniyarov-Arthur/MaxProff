@@ -1,0 +1,126 @@
+.advantage{
+  padding-bottom: 30px;
+  
+  &__title{
+    padding: 110px 15px 57px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    color: #171616;
+  }
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-box{
+    position: relative;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 3px;
+  }
+
+  &__img{
+    width: 100%;
+  }
+
+  &__subtitle{
+    margin-bottom: 33px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #171616;
+  }
+
+  &__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #171616;
+  }
+
+  &__work{
+    max-width: 285px;
+
+    .advantage__img-box::before{
+      content: "";
+      position: absolute;
+      width: 11.37px;
+      height: 11.37px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: 1px;
+      left: 13px;
+      z-index: -1;
+    }
+  }
+
+  &__price{
+    position: relative;
+    left: -25px;
+    max-width: 288px;
+
+    .advantage__img-box::before{
+      content: "";
+      position: absolute;
+      width: 11.37px;
+      height: 11.37px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: 17px;
+      left: 21px;
+      z-index: -1;
+    }
+  }
+
+  &__master{
+    max-width: 232px;
+    .advantage__subtitle{
+      margin-bottom: 12px;
+    }
+
+    .advantage__img-box::before{
+      content: "";
+      position: absolute;
+      width: 11.37px;
+      height: 11.37px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: 25px;
+      left: 13px;
+      z-index: -1;
+    }
+  }
+
+  &__remake{
+    position: relative;
+    left: 15px;
+    max-width: 285px;
+    
+    .advantage__subtitle{
+      margin-bottom: 30px;
+    }
+
+    .advantage__img-box::before{
+      content: "";
+      position: absolute;
+      width: 11.37px;
+      height: 11.37px;
+      // background-color: red;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: 17px;
+      left: 19px;
+      z-index: -1;
+    }
+  }
+}

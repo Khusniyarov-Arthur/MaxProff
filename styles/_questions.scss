@@ -1,0 +1,113 @@
+.questions{
+  &__title{
+    padding-right: 40px;
+    padding-top: 65px;
+    margin-bottom: 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    text-align: center;
+    color: #171616;
+  }
+
+  &__subtitle{
+    display: block;
+    margin-bottom: 35px;
+    padding-right: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #171616;
+  }
+
+  &__wrapper{
+    margin-bottom: 76px;
+  }
+
+  &__list-box{
+    position: relative;
+    max-width: 1098px;
+    padding-left: 60px;
+    cursor: pointer;
+  }
+
+  &__list{
+    margin-bottom: 0px;
+    padding: 15px 0 14px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #171616;
+  }
+  
+  &__item{
+    display: none;
+    padding: 10px 0 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #171616;
+  }
+
+  &__list::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(10%, -50%);
+    display: block;
+    width: 27px;
+    height: 5px;
+    background-color: #cccccc;
+  }
+
+  &__list::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(270%, -50%);
+    display: block;
+    width: 5px;
+    height: 27px;
+    background-color: #cccccc;
+  }
+
+  .questions__list-box-active .questions__item{
+    display: block;
+  }
+
+  .questions__list-box-active .questions__list{
+    color: $green-color;
+    border-bottom: 1px solid #c4c4c4 ;
+    padding: 18px 0 14px 0;
+  }
+
+  .questions__list-box-active .questions__list::before{
+    left: 0;
+    top: 50%;
+    transform: translate(70%, -680%);
+    width: 13.2px;
+    height: 4px;
+    background-color: $green-color;
+  }
+
+  .questions__list-box-active .questions__list::after{
+    background-color: transparent;
+  }
+
+  .questions__list-box-active{
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px rgba(215, 215, 215, 0.25);
+    padding-right: 81px;
+  }
+}

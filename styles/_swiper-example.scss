@@ -1,0 +1,32 @@
+.button-right::after {
+  content: '';
+  width: 13.5px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-image: url("../img/slider-button/right.svg");
+  transform: translatey(50%);
+  position: relative;
+  bottom: 30px;
+  right: -65px;
+}
+
+.button-left::after {
+  width: 13.5px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  background-position: center;
+  background-image: url("../img/slider-button/left.svg");
+  transform: translatey(50%);
+  position: relative;
+  bottom: 30px;
+  left: -65px;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: ''!important;
+}

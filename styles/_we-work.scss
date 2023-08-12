@@ -1,0 +1,254 @@
+.we-work{
+  margin-bottom: 50px;
+  padding-bottom: 45px;
+  
+  &__wrapper{
+    margin: 0 auto;
+  }
+  
+  &__title {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 49px;
+    color: #171616;
+  }
+  
+  &__text {
+    max-width: 773px;
+    margin: 0 auto;
+    padding: 11px 0 70px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #171616;
+  }
+  
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__wrap-left {
+    display: flex;
+  }
+  
+  &__wrap-right {
+    display: flex;
+  }
+  
+  &__card {
+    max-width: 150px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  &__logo {
+    margin: 0 auto;
+    margin-bottom: 23px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__ring {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 45px;
+  }
+  
+  &__img {
+    width: 100%;
+    object-fit: cover; 
+  }
+  
+  &__card-subtitle {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #171616;
+  }
+  
+  &__lap {
+    position: absolute;
+    left: 50%;
+    bottom: -45px;
+    z-index: 2;
+    transform: translateX(-50%);
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 2px solid #ffffff;
+  }
+  
+  &__line-left, &__line-right {
+    position: absolute;
+    bottom: -35px;
+    display: block;
+    width: 550%;
+    height: 6px;
+    background: linear-gradient(0deg, #F2F2F2, #F2F2F2), #D1D1D1;
+    border-radius: 3px;
+  }
+
+  &__line-left {
+    left: 20px;
+  }
+
+  &__line-right {
+    right: 20px;
+  }
+
+  &__measuring {
+    max-width: 130px;
+    margin-right: 20px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -20px;
+      left: 23px;
+      z-index: -1;
+    }
+  }
+
+  &__estimate {
+    max-width: 130px;
+    margin-right: 60px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -74px;
+      left: 47px;
+      z-index: -1;
+    }
+  }
+
+  &__contract {
+    margin-right: 50px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -29px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+
+  &__invoices {
+    margin-right: 0px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      color: transparent;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -73px;
+      left: 24px;
+      z-index: -1;
+    }
+  }
+
+  &__control {
+    margin-right: 17px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -44px;
+      left: 13px;
+      z-index: -1;
+    }
+  }
+
+  &__act-before {
+    max-width: 110px;
+    margin-right: 41px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -29px;
+      left: 13px;
+      z-index: -1;
+    }
+  }
+
+  &__act-after {
+    max-width: 120px;
+    margin-right: 42px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -75px;
+      left: 44px;
+      z-index: -1;
+    }
+  }
+
+  &__warranty {
+    max-width: 110px;
+    margin-right: 0px;
+
+    .we-work__logo::after{
+      content: "";
+      position: relative;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: rgba(108, 172, 61, 1);
+      border-radius: 50%;
+      top: -40px;
+      left: 36px;
+      z-index: -1;
+    }
+  }
+ }
+

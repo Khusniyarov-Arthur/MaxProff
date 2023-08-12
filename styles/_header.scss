@@ -1,0 +1,202 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 21.5px 0;
+    align-items: center;
+  }
+
+  &__logo-img {
+      width: 126px;
+      height: 44px;
+  }
+
+  &__nav {
+    padding-left: 16px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    :hover {
+      color: $hover-color;
+      border-bottom: 2px solid $green-color;
+    }
+  }
+
+  &__link{
+    color: #171616;
+  }
+
+  &__item:not(:last-child){
+    margin-right: 24px;
+  }
+
+  &__info {
+    align-self: center;
+    padding-left: 20px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
+  }
+
+  &__phone-logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+
+  &__phone-number{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark-text;
+  }
+
+  &__working-mode{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark-text;
+  }
+
+  &__call-text {
+    min-width: 173px;
+    height: 45px;
+    border: 1px solid $green-color;
+    border-radius: 3px;
+    background-color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $green-color;
+    
+    &:hover {
+      background-color: $green-color;
+      color: #ffffff;
+    }
+
+    &:active {
+      background-color: rgb(147, 220, 1);
+      color: #ffffff;
+      border: none;
+    }
+  }
+}
+
+.subtitle {
+  margin-bottom: 33px;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  padding-right: 65px;
+  border-top: 1px solid $green-color;
+  border-bottom:  1px solid $green-color;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #171616;
+  }
+
+  &__item:hover::before {
+    content: '';
+    width: 115%;
+    height: 70px;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: -25px;
+    z-index: -1;
+    background-color: $green-color
+  }
+
+  &__link{
+    color: #171616;
+  }
+
+  &__item:nth-child(4) {
+    margin-right: 15px;
+  }
+
+  &__link-tick{
+    width: 12px;
+    height: 6px;
+  }
+  
+  &__link-tick::after {
+      content: url("../img/header/tick.svg");
+      padding-left: 5px;
+  }
+
+  &__sub-menu{
+    position: absolute;
+    left: -43px;
+    top: 17px;
+    z-index: 5;
+    display: none;
+    padding-top: 30px;
+  }
+
+  &__sub-list{
+    width: 218px;
+    padding: 25px 38px 30px 41px;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.25);
+  }
+
+  &__sub-link{
+    color:#171616;
+  }
+
+  &__item:hover &__sub-menu {
+      display: block;
+  }
+  
+  &__sub-item{
+    position: relative;
+    &:not(:last-child){
+    margin-bottom: 20px;
+    }
+  }
+
+  &__sub-item:hover &__sub-around { 
+    position: absolute; 
+    left: -25px;
+    top: -13px;
+    right: -25px;
+    bottom: -13px;
+    border: 1px solid $green-color;
+
+    border-radius: 3px;
+  }
+
+  &__sub-link{
+    font-weight: 400;
+  }
+}
+

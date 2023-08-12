@@ -1,0 +1,54 @@
+.consultation{
+  max-width: 1440px;
+  padding: 29px 0 25px;
+  margin: 0 auto;
+  background-color: $green-color;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text-box{
+    display: flex;
+    justify-content: space-between;
+    width: 875px;
+  }
+
+  &__title{
+    padding-top: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__subtitle{
+    padding-right: 0px;
+    max-width: 570px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  &__btn{
+    padding: 14px 36px;
+    border: 2px solid #FFFFFF;
+    border-radius: 31px;
+    background-color: $green-color;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
